@@ -1,0 +1,107 @@
+/* figtree-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/figtree-v5-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/figtree-v5-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* figtree-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/figtree-v5-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "figtree", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 21px;
+  background-color: rgba(244, 208, 78, 1);
+}
+.main-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 24px;
+  border-radius: 20px;
+  width: 384px;
+  box-shadow: rgba(0, 0, 0, 0.95) 12.95px 14.95px 9.6px;
+}
+.main-card__box {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.main-card__box__link {
+  padding: 4px 12px 4px 12px;
+  background-color: #f4d04e;
+  border-radius: 4px;
+  width: 82px;
+  text-align: center;
+}
+.main-card__box__data {
+  font-weight: 500;
+  color: #111;
+}
+.main-card__box__title {
+  position: relative;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 36px;
+  color: #111;
+  transition: 0.3s;
+  &:hover {
+    color: #f4d04e;
+    cursor: pointer;
+  }
+}
+.main-card__box__title::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #111;
+  bottom: -0.1rem;
+  left: 0;
+  transition: 0.3s;
+}
+.main-card__box__title:hover::after {
+  width: 100%;
+}
+.main-card__box__decription {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f7f7f;
+}
+.main-card__box__person-blog {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-card__box__person-blog__name {
+  font-weight: 800;
+}
